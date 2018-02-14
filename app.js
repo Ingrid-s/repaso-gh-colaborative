@@ -1,3 +1,4 @@
+
 //1010
 function readFile() {
   if (this.files && this.files[0]) {
@@ -11,6 +12,7 @@ function paintImage(e) {
   realTimeImage.src = e.target.result;
   // console.log(e.target);
 }
+
 //termina 1010
 
 //1011
@@ -30,7 +32,6 @@ sendComment.addEventListener("click", printComments);
 textColor.addEventListener("click", changeTextColor);
 backgroundColor.addEventListener("click", chnageBackgroundColor);
 selectImage.addEventListener("change", readFile);
-
 //termina 1011
 
 //inicia 1012
@@ -58,3 +59,18 @@ function changeSizeText() {
   }
 }
 //termina 1012
+
+
+
+// pintar comentio en publicaciones
+function printComments (){
+  var text = getTextPreview();
+  var publishComment = text.parentNode.cloneNode(true);
+  console.log(text.parentNode);
+  commentedPost.insertBefore(publishComment, commentedPost.firstChild);
+  area.value = " ";
+  text.removeAttribute("style");
+  text.innerText = " ";
+  // document.getElementById("real-time-image").removeAttribute("src");
+}
+
