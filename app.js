@@ -60,7 +60,7 @@ function changeSizeText() {
 }
 //termina 1012
 
-// código faltante en la númeración
+// código faltante en la numeración
 
 // Para cambiar  la alineacion del texto
 function changeAlignText (){
@@ -76,3 +76,4 @@ function chnageBackgroundColor (){
   var backgroundText = prompt("Elige el fondo de tu texto");
   realTimeComment.style.backgroundColor = backgroundText;
 }
+//termina código faltante en la numeración
